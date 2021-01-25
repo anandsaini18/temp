@@ -10,7 +10,7 @@ body {
   margin: 0;
   color: white;
   background-size: cover;
-  background-color: #0b0b0c;
+  background-color: black;
   font-size: 0.70rem;
 }
 
@@ -101,7 +101,7 @@ nav {
     font-size: 0.5rem;
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 90vh;
     top: 10vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,18 +179,13 @@ nav {
   transition: ease-in-out 1s;
 }
 
-.about-container {
-  position: relative;
-  margin-top: 90vh;
-}
-
 .nav-links li:hover {
   color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: translate(5%, 5%);
-          transform: translate(5%, 5%);
-  letter-spacing: 1.5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(0%, 5%);
+          transform: translate(0%, 5%);
+  letter-spacing: 1px;
 }
 
 .artfreak {
@@ -318,11 +313,6 @@ nav {
 /********************************************************************/
 /*Resuable components*/
 /********************************************************************/
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 header {
   background-image: url(img/camera_unsplash.jpg);
   background-size: cover;
@@ -340,50 +330,27 @@ h1 {
   margin-left: 20px;
 }
 
-.midlogo {
-  width: 530px;
-  height: 60px;
-  margin-top: 38%;
-  margin-left: 5%;
-}
-
-.main-nav {
-  float: right;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 80px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  padding: 8px 0;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 50%;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  font-size: 55%;
+p {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #e0d0d0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
 /**********************************************/
 /**Gallery Components*/
 /**********************************************/
 section {
-  background: #080809;
   background-size: cover;
-  padding: 50px 0;
+  margin-top: 40px;
+  padding: 20px 0px;
+  min-height: 100%;
 }
 
 .Gallery-Heading {
+  top: 10px;
   text-align: center;
 }
 
@@ -435,7 +402,7 @@ section {
 }
 
 .container .card:hover {
-  height: 520px;
+  height: 440px;
 }
 
 .container .card .imgBX {
@@ -443,7 +410,6 @@ section {
   width: 260px;
   height: 260px;
   top: -60px;
-  left: 11px;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -456,8 +422,7 @@ section {
 
 .container .card .content {
   position: relative;
-  margin-top: -40px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   color: #111;
   visibility: hidden;
   opacity: 0;
@@ -471,6 +436,7 @@ section {
   margin-top: 20px;
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+  text-align: center;
 }
 
 h2 {
@@ -488,5 +454,34 @@ p {
   font-family: 'Poppins', 'Arial', sans-serif;
   font-weight: 400;
   text-align: center;
+}
+
+.insta-links {
+  text-align: center;
+}
+
+.insta-links a {
+  margin-top: 2%;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: #e0d0d0;
+  text-decoration: none;
+}
+
+.insta-links a:hover {
+  color: #acacac;
+  text-decoration: none;
+}
+
+.insta-links a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.insta-links a:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

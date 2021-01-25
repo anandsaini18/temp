@@ -10,7 +10,7 @@ body{
     margin:0;
     color: white;
     background-size: cover;
-    background-color: rgb(11, 11, 12);
+    background-color: rgb(0, 0, 0);
     font-size: 0.70rem;
 }
 
@@ -24,6 +24,7 @@ nav{
     align-items:center;
     min-height: 10vh;
     margin: 0px 50px 0px 50px;
+    
     justify-content: space-between;
 }
 .logo{
@@ -82,11 +83,14 @@ nav{
     // body{
     //     overflow-x:hidden;
     // }
+    // .first-page{
+    //     min-height: 60vh;
+    // }
     .nav-links{
         font-size: 0.5rem;
         position: absolute;
         right:0px;
-        height:92vh;
+        height:90vh;
         top:10vh;
         display:flex;
         flex-direction: column;
@@ -131,18 +135,17 @@ nav{
     transition: ease-in-out 1s;
 }
 
-.about-container{
-    position: relative;
-    margin-top:90vh;
-}
+// .about-container{
+//     position: relative;
+//     margin-top:90vh;
+// }
 
 .nav-links li:hover{
     color:rgb(0, 0, 0); 
-    transition: 0.2s;
+    transition: 0.5s;
     // font-size:1.3em;
-    transform: translate(5%,5%);
-    letter-spacing: 1.5px;
-    
+    transform: translate(0%,5%);
+    letter-spacing: 1px;
 }
 .artfreak{
     position: absolute;
@@ -251,18 +254,12 @@ nav{
 /*Resuable components*/
 /********************************************************************/
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
- 
+
 header {
     background-image: url(img/camera_unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-
-
 }
 
 h1{
@@ -275,38 +272,13 @@ h1{
     margin-left: 20px;
 }
 
-.midlogo {
-    width: 530px;
-    height: 60px;
-    margin-top: 38%;
-    margin-left: 5%;
-
-}
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-    
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 80px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff; 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 50%;
-    transition: .2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active{
-    font-size: 55%;
+p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(224, 208, 208);
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 /**********************************************/
@@ -314,12 +286,15 @@ h1{
 /**********************************************/
 
 section{
-    background:#080809;
+    // background:#080809;
     background-size: cover;
-    padding: 50px 0;
+    margin-top:40px;
+    padding:20px 0px;
+min-height: 100%;
 }
 
 .Gallery-Heading{
+    top:10px;
     text-align: center;
 }
 
@@ -353,7 +328,7 @@ align-items: center;
 }
 
 .container .card:hover{
-    height: 520px;
+    height: 440px;
 }
 
 .container .card .imgBX{
@@ -361,21 +336,21 @@ align-items: center;
     width: 260px;
     height: 260px;
     top: -60px;
-    left: 11px;
+    // left: 11px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2) ;
     z-index: 1;
+   
 }
 
 .container .card .imgBX img{
     max-width: 100%;
     border-radius: 4px;
-
 }
 
 .container .card .content{
     position: relative;
-    margin-top: -40px;
-    padding: 10px 15px;
+    // margin-top: -40px;
+    padding: 10px 10px;
     color: #111;
     visibility: hidden;
     opacity: 0;
@@ -389,8 +364,9 @@ align-items: center;
     opacity: 1;
     margin-top: 20px;
     transition-delay: .3s;
-}
 
+    text-align: center;
+}
 h2{
     font-size: 30px;
     font-family: 'Poppins', 'Arial', sans-serif;
@@ -407,3 +383,33 @@ p{
     font-weight: 400;
     text-align: center;
 }
+.insta-links{
+    
+   
+    text-align: center;
+    
+a{
+    margin-top:2%;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(224, 208, 208);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+  }
+  
+  a:active {
+    color:white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+}
+
