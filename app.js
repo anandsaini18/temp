@@ -6,7 +6,7 @@ const navSlide = () => {
 
     galleryBtn.addEventListener('click', function () {
         $('html,body').animate({
-            scrollTop: $(".about-container").offset().top
+            scrollTop: $(".Gallery-Heading").offset().top
         },
             'slow');
         console.log('CLICKED');
